@@ -9,7 +9,7 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -119,14 +119,14 @@
     <div class="container">
         <div class="row align-items-center g-5">
 
-            <div class="col-lg-6">
-                <img src="assets/images/about-car.jpg" class="img-fluid rounded-4 shadow" alt="About image">
+            <div class="col-lg-6" data-aos="zoom-in">
+                <img src="assets/images/about-car.jpg"  class="img-fluid rounded-4 shadow" alt="About image">
             </div>
           
             <div class="col-lg-6">
                 <span>ABOUT US</span>
 
-                <h2 class="mt-3"> A Fleet Of Luxury & Economy Vehicles</h2>
+                <h2 class="mt-3" data-aos="fade-up"> A Fleet Of Luxury & Economy Vehicles</h2>
                 <p class="mt-4">
                  KKC Tours and Travels Pvt. Ltd. offers reliable, comfortable, and premium transportation solutions with a diverse fleet, professional chauffeurs, and customized travel services designed for safe and seamless journeys.
                 </p>
@@ -153,7 +153,7 @@
     <div class="why-like-container container">
 
         <!-- Heading -->
-        <div class="why-like-heading">
+        <div class="why-like-heading" data-aos="fade-up">
 
             <span>WHY PEOPLE LIKE US?</span>
 
@@ -241,7 +241,7 @@
 
 <!-- Left -->
 
-<div class="kkc-vision-banner">
+<div class="kkc-vision-banner" data-aos="fade-up">
 
 <div class="kkc-banner-content">
 
@@ -344,7 +344,7 @@ To provide comfortable vehicles, skilled chauffeurs and customized travel soluti
 
     <div class="drive-cta-content">
 
-        <h2>Experience Luxury Car Rental Services</h2>
+        <h2 data-aos="zoom-in">Experience Luxury Car Rental Services</h2>
 
         <p>
             Choose from premium vehicles for business trips, vacations,
@@ -368,7 +368,7 @@ To provide comfortable vehicles, skilled chauffeurs and customized travel soluti
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-6" >
-                <img src="assets/images/about-img2.png"class="img-fluid" alt="We are image">
+                <img src="assets/images/about-img2.png"class="img-fluid" data-aos="zoom-in" alt="We are image">
             </div>
             <div class="col-lg-6"><span class="sub-title"> WE ARE</span>
 <h2 class="mt-3">A Fleet Of Luxury & Economy Vehicles</h2>
@@ -496,7 +496,13 @@ Using modern technology, experienced chauffeurs, and efficient management system
 
 <!-- ================= JS ================= -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 
 </body>
