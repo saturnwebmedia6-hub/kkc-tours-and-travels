@@ -214,11 +214,11 @@ p{
 }
 
 .kkc-modern-content h1{
-    font-size:82px;
+    font-size:75px;
     line-height:1.05;
     color:#fff;
     margin-bottom:28px;
-    font-weight:800;
+    font-weight:700;
 }
 
 .kkc-modern-content p{
@@ -537,7 +537,7 @@ margin-top: 10px;
 }
 /* =================== Vision Mission ==================== */
 .kkc-vision-section{
-    padding:70px;
+    /* padding:70px; */
     position:relative;
     overflow:hidden;
 }
@@ -944,6 +944,96 @@ margin-top: 10px;
         width:100%;
         justify-content:center;
     }
+
+}
+
+/* ============ cta =================== */
+
+
+.simple-cta{
+position:relative;
+width:100%;
+padding:100px 20px;
+background-image:url(../images/banner2.jpg);
+overflow:hidden;
+background-position: center;
+background-attachment: fixed;
+}
+
+.simple-cta-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+}
+.simple-cta-content{
+position:relative;
+z-index:2;
+max-width:800px;
+margin:auto;
+text-align:center;
+}
+.simple-cta-content span{
+display:inline-block;
+padding:8px 18px;
+background:rgba(255,255,255,.15);
+color:#fff;
+border-radius:30px;
+font-size:13px;
+letter-spacing:2px;
+margin-bottom:20px;
+
+}
+
+.simple-cta-content h2{
+
+font-size:45px;
+line-height:1.2;
+color:#fff;
+margin-bottom:20px;
+}
+
+.simple-cta-content p{
+font-size:16px;
+line-height:1.8;
+color:#f2f2f2;
+max-width:650px;
+margin:auto auto 35px;
+
+}
+
+.simple-cta-btn{
+
+display:inline-block;
+padding:16px 38px;
+background:#58A1DA;
+color:#fff;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.4s;
+
+}
+
+.simple-cta-btn:hover{
+transform:translateY(-5px);
+background:#1e71b7;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+.simple-cta{
+padding:90px 20px;
+background-attachment:scroll;
+
+}
+
+.simple-cta-content h2{
+font-size:35px;
+
+}
 
 }
 /* =============== wehat we do ================= */
@@ -2525,71 +2615,191 @@ margin-top: 10px;
   letter-spacing:1px;
   /* margin-bottom:14px; */
 }
-/* =========================
-   ACCORDION - MODERN STYLE
-========================= */
 
-.accordion{
-  border: none;
+/* =========================== We Are ======================= */
+
+.fleet-about-container{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
 }
 
-/* ITEM CARD */
-.accordion-item{
-  border: none;
-  margin-bottom: 15px;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  transition: 0.3s;
+
+/* Image */
+
+.fleet-about-image{
+position:relative;
 }
 
-.accordion-item:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(30,113,183,0.15);
+.fleet-about-image img{
+width:100%;
+border-radius:30px;
+display:block;
 }
 
-/* BUTTON */
-.accordion-button{
-  background: #fff;
-  color: #0f172a;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 18px 20px;
-  border: none;
-  box-shadow: none;
-  transition: 0.3s;
+.fleet-exp-box{
+position:absolute;
+bottom:20px;
+right:-20px;
+
+background:#58A1DA;
+color:#fff;
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
 }
 
-/* ACTIVE BUTTON */
-.accordion-button:not(.collapsed){
-  background: linear-gradient(135deg, #1E71B7, #145a93);
-  color: #fff !important;
+.fleet-exp-box h3{
+font-size:35px;
+margin-bottom:5px;
 }
 
-/* remove bootstrap focus glow */
-.accordion-button:focus{
-  box-shadow: none;
+
+/* Content */
+
+.fleet-about-content span{
+display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: rgba(30, 113, 183, 0.08);
+    color: var(--h2-heading);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
 }
 
-/* BODY */
-.accordion-body{
-  font-size: 14.5px;
-  line-height: 1.7;
-  /* color: #64748b; */
-  background: #fff;
-  padding: 18px 20px;
+.fleet-about-content h2{
+
+/* font-size:50px; */
+margin-bottom:20px;
+line-height:1.2;
+
 }
 
-/* ICON ROTATION CLEAN EFFECT */
-.accordion-button::after{
-  filter: brightness(0.5);
+.fleet-about-content p{
+
+color:#666;
+line-height:1.9;
+margin-bottom:30px;
+
 }
 
-.accordion-button:not(.collapsed)::after{
-  filter: brightness(0) invert(1);
+
+/* Tabs */
+
+.fleet-tabs{
+
+display:flex;
+gap:15px;
+
+margin-bottom:25px;
+
 }
 
+.tab-btn{
+
+border:none;
+outline:none;
+
+padding:14px 28px;
+
+background:#f5f5f5;
+
+border-radius:50px;
+
+cursor:pointer;
+
+font-size:15px;
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.tab-btn.active{
+
+background:#58A1DA;
+color:#fff;
+
+}
+
+
+/* Tab Box */
+
+.tab-content{
+
+display:none;
+
+}
+
+.active-tab{
+
+display:block;
+
+}
+
+.fleet-tab-box{
+
+display:flex;
+gap:18px;
+
+padding:25px;
+
+background:#f8f8f8;
+
+border-radius:20px;
+
+}
+
+.fleet-tab-box i{
+
+font-size:30px;
+color:#58A1DA;
+
+}
+
+.fleet-tab-box h4{
+
+margin-bottom:10px;
+font-size:22px;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.fleet-about-container{
+
+grid-template-columns:1fr;
+
+}
+
+.fleet-about-content h2{
+
+font-size:35px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.fleet-tabs{
+
+flex-direction:column;
+
+}
+
+}
+/* ======================== */
 .vm-section{
   padding:90px 0;
   background:#f8fafc;
@@ -2893,6 +3103,7 @@ margin-top: 10px;
 }
 
 /* Card */
+
 .holiday-tour-card{
     background: #fff;
     border-radius: 18px;
@@ -2938,7 +3149,9 @@ margin-top: 10px;
     line-height: 1.8;
     font-size: 15px;
 }
-
+.fleetSlider{
+    padding-bottom:60px !important;
+}
 /* Responsive */
 @media(max-width:768px){
 

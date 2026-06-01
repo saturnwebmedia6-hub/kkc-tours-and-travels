@@ -8,7 +8,8 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
-
+<!-- Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -86,9 +87,9 @@
         <div class="breadcrumb-content">
 
             <h1>Services</h1>
-            <p class="text-white">
+            <!-- <p class="text-white">
                 Discover comfort, luxury, and reliable transportation with KKC.
-            </p>
+            </p> -->
 
             <nav>
                 <ol class="breadcrumb justify-content-center mb-0">
@@ -111,18 +112,20 @@
 
 <!-- ================= SERVICES ================= -->
 
-<section class="travel-service-sec p-bottom p-top">
+<section class="travel-service-sec p-bottom p-top" data-aos="fade-up">
 
     <div class="travel-service-container container">
 
         <!-- Heading -->
-        <div class="sec-title">
+       <div class="sec-title" data-aos="fade-up">
             <span>OUR SERVICES</span>
             <h2>Explore Our Rental Services</h2>
+            <p>We provide airport transfers, local rentals, corporate travel and outstation trip services.
+Enjoy safe, affordable and hassle-free travel experiences with KKC Tours & Travels.</p>
         </div>
 
         <!-- Service Cards -->
-        <div class="travel-service-grid">
+        <div class="travel-service-grid" data-aos="fade-up">
 
             <!-- Card -->
             <div class="travel-service-box">
@@ -141,7 +144,7 @@
                     Best package for local city rides, office meetings and shopping trips.
                 </p>
 
-                <a href="#">
+                <a href="contact-us.html">
                     Book Service
                     <i class="bi bi-arrow-right"></i>
                 </a>
@@ -165,7 +168,7 @@
                     Full-day comfortable travel package for family and business travel.
                 </p>
 
-                <a href="#">
+                <a href="contact-us.html">
                     Book Service
                     <i class="bi bi-arrow-right"></i>
                 </a>
@@ -189,7 +192,7 @@
                     Affordable one-way travel solution with professional drivers.
                 </p>
 
-                <a href="#">
+                <a href="contact-us.html">
                     Book Service
                     <i class="bi bi-arrow-right"></i>
                 </a>
@@ -213,7 +216,7 @@
                     Luxury outstation rides for long-distance family and corporate travel.
                 </p>
 
-                <a href="#">
+                <a href="contact-us.html">
                     Book Service
                     <i class="bi bi-arrow-right"></i>
                 </a>
@@ -233,7 +236,7 @@
     <div class="travel-counter-container container">
 
         <!-- Left Content -->
-        <div class="travel-counter-content">
+        <div class="travel-counter-content" data-aos="zoom-in">
             <span>WHY CHOOSE US</span>
             <h2>Trusted Rental Car Services For Every Journey</h2>
               <p>
@@ -242,31 +245,31 @@
                 pricing for airport transfers, local rides, corporate travel 
                 and outstation trips.
             </p>
-            <a href="#" class="travel-counter-btn">Book Your Ride</a>
+            <a href="contact-us.html" class="travel-counter-btn">Book Your Ride</a>
         </div>
         <!-- Right Counter -->
         <div class="travel-counter-grid">
             <!-- Counter -->
             <div class="travel-counter-box">
-                <h3><span class="counter" data-target="350 +">350 </span>+</h3>
+                <h3 data-aos="zoom-in"><span class="counter" data-target="350 +">350 </span>+</h3>
                 <p>Cars For Rent</p>
             </div>
 
             <!-- Counter -->
             <div class="travel-counter-box">      
-                <h3><span class="counter" data-target="6500 +">6500 </span>+</h3>
+                <h3 data-aos="zoom-in"><span class="counter" data-target="6500 +">6500 </span>+</h3>
                  <p>Happy Clients</p>
             </div>
 
             <!-- Counter -->
             <div class="travel-counter-box">
-                <h3>
+                <h3 data-aos="zoom-in">
                     <span class="counter" data-target="1500">20 </span>+</h3>
                 <p>Trips Completed</p>
             </div>
             <!-- Counter -->
             <div class="travel-counter-box">
-                <h3><span class="counter" data-target="50">50 </span>+</h3>
+                <h3 data-aos="zoom-in"><span class="counter" data-target="50">50 </span>+</h3>
                 <p>Drivers</p>
             </div>
 
@@ -274,7 +277,7 @@
     </div>
 </section>
 <!-- ================= OUR FLEET================= -->
-<section class="travel-showcase-sec p-bottom p-top">
+<section class="travel-showcase-sec p-bottom p-top" data-aos="fade-up">
     <div class="travel-showcase-container container">
         <!-- Heading -->
         <div class="sec-title">
@@ -394,7 +397,13 @@
 
 <!-- ================= JS ================= -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 
 </body>
